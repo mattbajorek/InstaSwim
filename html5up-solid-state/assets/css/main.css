@@ -3252,6 +3252,7 @@
 
 			#banner {
 				padding: 7em 0 8.25em 0;
+				margin-top: -3.5em;
 				margin-bottom: -6.5em;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/pool.jpg");
