@@ -3139,14 +3139,14 @@
 			}
 
 		}
-
+/*
 	body.is-menu-visible #page-wrapper {
 		opacity: 0.35;
-	}
+	}*/
 
-		body.is-menu-visible #page-wrapper:before {
+		/*body.is-menu-visible #page-wrapper:before {
 			display: block;
-		}
+		}*/
 
 	body.is-menu-visible #menu {
 		-moz-transform: translateX(0);
