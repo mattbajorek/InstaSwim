@@ -1,0 +1,25 @@
+{
+  "name": "instaswim",
+  "version": "1.0.0",
+  "description": "Rework of Brian's website",
+  "main": "geocoder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbajorek/InstaSwim.git"
+  },
+  "keywords": [
+    "InstaSwim"
+  ],
+  "author": "Matt Bajorek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattbajorek/InstaSwim/issues"
+  },
+  "homepage": "https://github.com/mattbajorek/InstaSwim#readme",
+  "dependencies": {
+    "geocoder": "^0.2.2"
+  }
+}
