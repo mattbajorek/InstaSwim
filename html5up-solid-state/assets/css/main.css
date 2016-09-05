@@ -3306,6 +3306,37 @@
 		padding: 10em 0 4.75em 0;
 	}
 
+		#banner .goto-next {
+	    border: 0;
+	    /*bottom: 0;*/
+	    display: block;
+	    height: 5em;
+	    left: 50%;
+	    margin: 0 0 0 -5em;
+	    overflow: hidden;
+	    position: relative;
+	    text-indent: 10em;
+	    white-space: nowrap;
+	    width: 10em;
+	    z-index: 1;
+		}
+
+			#banner .goto-next:before {
+		    background-image: url("images/arrow.svg");
+		    background-position: center center;
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    content: '';
+		    display: block;
+		    height: 1.5em;
+		    left: 50%;
+		    margin: -0.75em 0 0 -1em;
+		    position: absolute;
+		    top: 50%;
+		    width: 2em;
+		    z-index: 1;
+			}
+
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
@@ -3399,10 +3430,10 @@
 				padding: 7em 0 8.25em 0;
 				margin-top: -3.5em;
 				margin-bottom: -6.5em;
-				background-color: #000000;
+				/*background-color: #000000;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/pool.jpg");
 				background-size: auto, cover;
-				background-position: center, center;
+				background-position: center, center;*/
 			}
 
 		}
