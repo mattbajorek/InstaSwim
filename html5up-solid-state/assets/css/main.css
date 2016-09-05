@@ -3310,7 +3310,7 @@
 	    border: 0;
 	    /*bottom: 0;*/
 	    display: block;
-	    height: 5em;
+	    height: 2.5em;
 	    left: 50%;
 	    margin: 0 0 0 -5em;
 	    overflow: hidden;
@@ -3326,9 +3326,11 @@
 		    background-position: center center;
 		    background-repeat: no-repeat;
 		    background-size: contain;
+		    border-radius: 100%;
+    		border: solid 2px rgba(255, 255, 255, 0.125);
 		    content: '';
 		    display: block;
-		    height: 1.5em;
+		    height: 2em;
 		    left: 50%;
 		    margin: -0.75em 0 0 -1em;
 		    position: absolute;
@@ -3435,6 +3437,10 @@
 				background-size: auto, cover;
 				background-position: center, center;*/
 			}
+
+				#banner .goto-next {
+					display: none;
+				}
 
 		}
 
