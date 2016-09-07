@@ -3,6 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
+    'webpack-hot-middleware/client',
     './entry.js'
   ],
   output: {
@@ -12,6 +13,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       $: "./jquery.min.js",

@@ -5,6 +5,10 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+var config = require('./webpack.config');
+var webpack= require("webpack");
+var webpackDevMiddleware = require("webpack-dev-middleware");
+var webpackHotMiddleware = require('webpack-hot-middleware');
 
 
 // Our model controllers (rather than routes)
@@ -36,6 +40,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// webpack dev middleware
+var compiler = webpack(config);
+app.use(webpackDevMiddleware(compiler, {noInfo: true, publicPath: config.output.publicPath}));
+app.use(webpackHotMiddleware(compiler));
 
 // routes
 app.use('/', index_controller);
