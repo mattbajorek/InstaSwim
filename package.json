@@ -4,7 +4,8 @@
   "description": "Rework of Brian's website",
   "main": "geocoder.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,16 @@
   },
   "homepage": "https://github.com/mattbajorek/InstaSwim#readme",
   "dependencies": {
-    "geocoder": "^0.2.2"
+    "body-parser": "^1.15.2",
+    "css-loader": "^0.25.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "file-loader": "^0.9.0",
+    "geocoder": "^0.2.2",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
   }
 }
