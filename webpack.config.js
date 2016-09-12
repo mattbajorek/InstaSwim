@@ -4,10 +4,10 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './entry.js'
+    './app/app.js'
   ],
   output: {
-    path: require('path').resolve('./public/assets/js/'),
+    path: require('path').resolve('./public/assets/bundle'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -23,10 +23,18 @@ module.exports = {
   ],
   module: {
     loaders: [
-      // { // use ! to chain loaders
-      //   test: /\.scss$/,
-      //   loader: 'style-loader!css-loader!sass-loader'
-      // },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['react', 'es2015', 'react-hmre']
+        }
+      },
+      { // use ! to chain loaders
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
